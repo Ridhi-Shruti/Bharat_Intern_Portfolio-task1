@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      overflow: hidden;
+    }
+    
+
+    body {
+      background-color: rgb(227, 215, 200);
+
+
+    }
+
+    .lineUp {
+      animation: 3s anim-lineUp ease-out;
+      font-size: x-large;
+      text-align-last: left;
+    }
+
+    @keyframes anim-lineUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    h2 {
+      font-family: customFont;
+      font-size: 80px;
+      width: 200px;
+      text-decoration: underline;
+
+    }
+
+    p {
+      font-family: customFont;
+      font-size: 20px;
+    }
+
+    .i {
+      margin-left: 150px;
+    }
+
+    .h:hover,
+    h2:hover {
+      text-decoration: line-through;
+    }
+
+    .s {
+      float: right;
+      top: 20px;
+    }
+
+    .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 0px;
+      overflow-y: hidden;
+    }
+
+    .left {
+      left: 0;
+      background-image:linear-gradient(  plum,rgb(234, 121, 234),rgb(241, 88, 241));
+      background-repeat: no-repeat;
+    }
+
+    .right {
+      right: 0;
+      background-image:linear-gradient( plum,rgb(234, 121, 234),rgb(241, 88, 241));
+      background-repeat: no-repeat;
+      text-align: center;
+      font-family: customFont2;
+    }
+
+   
+    .i3 {
+      font-size: 80px;
+      padding: 20px;
+    }
+
+    .i2 {
+      font-size: 70px;
+      padding: 50px 0;
+    }
+    .i2:hover{
+      text-decoration: line-through;
+    }
+    .i3:hover{
+      text-decoration: line-through;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(31, 28, 24);
+    }
+
+    .ji:hover {
+      font-family: gu;
+    }
+
+    :root {
+      --secondary-color: #151226;
+      --contrast-color:rgb(31, 28, 24);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: -10;
+      background-color: var(--contrast-color);
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+
+    
+      animation: expand .8s ease forwards;
+ 
+      position: relative;
+      transition:  .8s ease;
+    }
+
+    .container_content {
+      width: 50%;
+    }
+
+
+    .par {
+      height: auto;
+      overflow: hidden;
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(500px) scale(.2);
+      }
+
+      100% {
+        transform: translateX(0px) scale(1);
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(300px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes expand {
+      0% {
+        transform: translateX(1400px);
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class='container'>
+    <div class="container_content">
+      <div class="container_content_inner">
+
+
+        <div class="split left">
+          <div class="i">
+            <h2 class="lineUp">Shruti Mahanta</h2>
+            <p class="lineUp">Hello and welcome! I'm currently immersed in the world of computer science and<br>
+             engineering at the Institute of technical Education and Research.My passion lies in delving into <br>
+             new programming languages, engaging in projects that captivate my interest, and embarking<br>
+             on exploration journeys within the vast realm of technology. If you have any shared<br>
+             interests or specific topics you'd like to discuss, feel free to share!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="i2">
+          <h1> <a class="ji" href="Contact.html"> CONTACT</a></h1>
+        </div>
+        <div class="i3">
+          <H1><a class="ji" href="About.html"> About</a></H1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <div class="overlay"></div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+           body{
+            background-color: plum;
+            
+            color:  rgb(43, 42, 42);;
+            
+        }
+        .test2 {
+            writing-mode: vertical-rl;
+            transform: scale(-1, -1);
+            margin-top: 40px;
+            margin-left: 10px;
+            font-family: monospace;
+           
+        }
+        
+        h1 {
+            font-size: 200px;
+            margin: 0;
+            margin-left: 150px;
+            font: cu;
+        }
+        
+        .o{
+            margin-left: 150px;
+            font-size: 22px;
+            font-family: su;
+            font-weight:300;   
+        } a:hover{
+            text-decoration:line-through;
+            color:  rgb(31, 28, 24);;
+            
+        }
+        a{color:  rgb(31, 28, 24);;
+            }
+            :root {
+      --secondary-color: #151226;
+      --contrast-color: plum;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: -10;
+      background-color: var(--contrast-color);
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+  
+    
+      animation: expand .8s ease forwards;
+      position: relative;
+    transition: all .8s ease;
+    }
+
+    .container_content {
+      width: 50%;
+    }
+
+   
+
+    .par {
+      height: auto;
+      overflow: hidden;
+    }
+    @keyframes anim-lineUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80%);
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(500px) scale(.2);
+      }
+
+      100% {
+        transform: translateX(0px) scale(1);
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(300px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes expand {
+      0% {
+        transform: translateX(1400px);
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+    .lineU {
+            animation: 2s anim-lineUp ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class="container_content">
+          <div class="container_content_inner">
+     <div>
+    <p class="test2">|||||||||||||/<a href="Portfolio.html">H O M E</a>/</p>
+    <h1 class="lineU">About.</h1>
+    <p class="o ">I am a driven and ambitious third-year student in the field of Computer Science and Engineering,<br> fueled by a deep passion for innovation and a proven track record of accomplishments.<br> Throughout my academic journey, I have consistently pushed the boundaries of my abilities, <br>achieving notable milestones across various aspects of computer science.
+
+       <br><br> In the domain of programming, I have excelled in competitive coding competitions, securing top<br> positions in both regional and national coding contests. Proficient in languages such as <br>Java, Python, and C++, I have garnered recognition for my skills, forming the basis for creating <br>impactful software solutions. My projects have been acknowledged for their <br>innovation and practical implementation, demonstrating my capability to translate theoretical knowledge into tangible outcomes.
+       <br><br>My expertise extends to database management, where I have successfully designed and implemented <br>efficient database systems for projects, receiving praise for their scalability and performance. <br>Moreover, my commitment to algorithmic excellence was underscored by my dedication to finding<br> optimal solutions to intricate computational challenges.
+   
+        <br><br>I am currently in search of opportunities to further apply my skills and expertise through internships<br> or projects aligned with my passion for technological innovation. I am confident that my unique <br>blend of accomplishments, technical prowess, and collaborative spirit will bring a positive <br>contribution to any project or team.
+        <br><br>Thank you for considering my profile. I am enthusiastic about the possibility of contributing my skills <br>to exciting and challenging opportunities in the realm of Computer Science and Engineering.
+       <br><br> Best regards,
+        
+        <br><br>Shruti Mahanta
+        <br><br> Computer Science and Engineering - 3rd Year
+        <br><br>Institute of Technical Education and Rsearch</p>
+    </div></div>
+</div>
+<div class="overlay"></div>
+</body>
+</html>
